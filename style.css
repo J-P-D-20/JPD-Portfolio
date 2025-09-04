@@ -26,7 +26,7 @@ button {
   all: unset;
 }
 
-span {
+.highlight {
   background-color: black;
   color: white
 }
@@ -75,14 +75,15 @@ main {
   flex-direction: column;
   justify-content: space-between;
   width: 25px;
-  height: 18px;
   cursor: pointer;
 }
 
 .hamburger span {
   display: block;
-  
-  background-color: black;
+   height: 1px; 
+  background: black;
+  margin: 1px 0;
+  width: 25px;
 }
 
 /* Nav */
@@ -247,6 +248,7 @@ p {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
