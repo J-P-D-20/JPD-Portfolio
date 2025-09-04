@@ -6,7 +6,7 @@ html {
 
 * {
   margin: 0;
-  padding: 0;  /* 🔹 Removed the global padding */
+  padding: 0.3rem;
   box-sizing: border-box;
   list-style: none;
 }
@@ -35,17 +35,23 @@ a {
 }
 
 .section {
-  padding: 6rem 2rem;  /* 🔹 Balanced padding */
+  padding: 9rem; 
   border: black solid 0.3rem; 
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   background-color: white;
-  border-bottom: 0.2rem solid black;
 }
+
+main {
+  padding-top: 5rem; /* same as header height */
+}
+
 
 .header-container {
   display: flex;
@@ -64,7 +70,6 @@ a {
 
 .nav li {
   transition: background-color 0.3s ease, transform 0.2s ease; 
-  padding: 0.3rem 0.6rem;
 }
 
 .nav li:hover {
@@ -221,6 +226,7 @@ p {
   border-right: none; /* Remove divider on small screens */
   padding-right: 0;
   margin-bottom: 1rem;
+  border-right: 3px solid black;
 }
 
 footer {
@@ -233,7 +239,7 @@ footer {
 /* 🔹 Responsive Styles */
 @media (max-width: 768px) {
   .section {
-    padding: 3rem 1rem; /* 🔹 smaller padding on phone */
+    padding: 3rem 1rem;
   }
 
   .discription {
@@ -250,7 +256,7 @@ footer {
   }
 
   .cards .card {
-    width: 100%; /* Full width on mobile */
+    width: 100%;
     max-width: 22rem;
   }
 
