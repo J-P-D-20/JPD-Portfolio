@@ -246,10 +246,15 @@ p {
 
 /* --- Footer --- */
 footer {
-  display: flex;
+ display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+
+  white-space: nowrap;   /* prevent text from wrapping */
+  text-align: center;    /* keep it centered */
+  width: 100%;           /* make footer span full width */
+  overflow-x: hidden;   
 }
 
 /* --- Responsive --- */
