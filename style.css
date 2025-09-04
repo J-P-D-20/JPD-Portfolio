@@ -208,7 +208,7 @@ p {
 }
 
 .chips img {
-  max-width: 2rem;   
+  max-width: 4rem;   
   height: auto;
 }
 
@@ -224,7 +224,7 @@ p {
 .contact-container h2 {
   font-size: 2rem;
   border-right: none; /* Remove divider on small screens */
-  padding-right: 0;
+  padding-right: 5px;
   margin-bottom: 1rem;
   border-right: 3px solid black;
 }
