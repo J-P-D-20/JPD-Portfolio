@@ -203,7 +203,7 @@ p {
 
 .chips td {
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 0rem;
   word-break: break-word; /* Prevent overflow */
 }
 
@@ -236,4 +236,4 @@ footer {
   padding: 10px;
 }
 
-/* 🔹 Responsive Styles */
+
