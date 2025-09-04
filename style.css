@@ -37,8 +37,9 @@ a {
 
 /* Sections */
 .section {
-  padding: 9rem 4rem; 
-  border: black solid 0.3rem; 
+  padding: 6rem 2rem; 
+  max-width: 100%;
+  
 }
 
 @media (max-width: 768px) {
@@ -155,10 +156,6 @@ p {
   }
 }
 
-/* Projects */
-#projects {
-  border: black solid 0.3rem;
-}
 
 .projects-container {
   display: flex;
@@ -232,6 +229,7 @@ p {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
+  min-width: unset;
   min-width: 30rem; 
 }
 
@@ -260,6 +258,7 @@ p {
   font-size: 20px;
   flex-wrap: wrap;
   text-align: center;
+  max-width: 100%;
 }
 
 .contact-container h2 {
@@ -267,6 +266,7 @@ p {
   border-right: 2px solid black;
   padding-right: 1rem;
   margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
