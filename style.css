@@ -52,20 +52,23 @@ main {
   padding-top: 5rem; /* same as header height */
 }
 
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 5rem; 
-  padding: 0 2rem;
+  padding: 0 1rem;
   flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .header-container ul {
   display: flex;
   gap: 1.25rem; 
   flex-wrap: nowrap;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .nav li {
@@ -178,7 +181,6 @@ p {
   height: 11.25rem; 
   width: 100%;
   object-fit: cover;
-  
 }
 
 .skills-container {
@@ -189,14 +191,14 @@ p {
 }
 
 .table-container {
-  width: 100%s;
+  width: 100%;
   overflow-x: auto; /* Allow horizontal scroll on small screens */
   margin: 1rem 0;
   border-radius: 0.5rem;
 }
 
 .chips {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
   text-align: center;
 }
@@ -218,14 +220,13 @@ p {
   justify-content: center;
   font-size: 20px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .contact-container h2 {
   font-size: 2rem;
-  border-right: none; /* Remove divider on small screens */
-  padding-right: 5px;
+  border-right: none; /* Removed fixed border for better mobile fit */
   margin-bottom: 1rem;
-  border-right: 3px solid black;
 }
 
 footer {
@@ -244,10 +245,12 @@ footer {
   .discription {
     margin: 1rem 0;
     font-size: 1rem;
+    text-align: center;
   }
 
   #intro-title {
     font-size: 1.8rem;
+    text-align: center;
   }
 
   .cards {
