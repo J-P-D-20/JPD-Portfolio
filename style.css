@@ -243,6 +243,12 @@ p {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+.contact-container address {
+  text-align: center;   /* center text inside */
+  margin: 0 auto;       /* center block itself */
+  display: block;       /* make sure it behaves like a block element */
+  line-height: 1.6;     /* optional: give some spacing between lines */
+}
 
 /* --- Footer --- */
 footer {
