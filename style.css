@@ -178,7 +178,7 @@ p {
   height: 11.25rem; 
   width: 100%;
   object-fit: cover;
-  display: block;
+  
 }
 
 .skills-container {
@@ -202,13 +202,13 @@ p {
 }
 
 .chips td {
- 
+  padding: 1rem;
   font-size: 1.2rem;
   word-break: break-word; /* Prevent overflow */
 }
 
 .chips img {
-  max-width: 3rem;   
+  max-width: 4rem;   
   height: auto;
 }
 
@@ -233,7 +233,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* 🔹 Responsive Styles */
@@ -262,7 +262,7 @@ footer {
 
   .chips td {
     font-size: 1rem;
-    
+    padding: 0.5rem;
   }
 
   .contact-container {
