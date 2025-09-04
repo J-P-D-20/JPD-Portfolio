@@ -1,140 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="tab-icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="tab-icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="tab-icon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="tab-icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="tab-icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="tab-icon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
 
-    <title>JPD Portfolio</title>
-    
+  <title>JPD Portfolio</title>
 </head>
 <body>
-    <header class="site-header">
-       <div class="header-container">
-           <a href="#hero"><h1 class="logo">JPD</h1></a>
-        <nav aria-label="primary">
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#hero"><h1 class="logo">JPD</h1></a>
+      
+      <!-- Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav aria-label="primary">
         <ul class="nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <!-- Hero -->
+    <section id="hero" class="hero" aria-labelledby="intro-title">
+      <div class="hero-container">
+        <div class="hero-grid">
+          <figure class="profile">
+            <img class="portofolio-pic" src="images/profile pic final.png" alt="My profile picture">   
+          </figure>
+          <div class="discription">
+            <h2 id="intro-title">HI, I'M JHOMARY<br>YOUR <span>WEB DEVELOPER</span></h2>
+            <button><span><a class="btn" href="#projects">See my work</a></span></button>
+          </div>
         </div>
-    </nav>
-    </header>
-    <main class="content">
-        <section id="hero" class="hero" arial-labelledby = "intro-title">
-            <div class="hero-container">
-            <div class="hero-grid">
-             <figure class="profile">
-                <img class="portofolio-pic" src="images/profile pic final.png" alt="My profile picture">   
-            </figure>
-             <div class="discription">
-                <h2 id="intro-title">HI, I'M JHOMARY  <br>YOUR<span> WEB DEVELOPER</span></h2>
-                
-               <button><span><a class= "btn" href="#projects">See my work</a></span></button>
-            </div>
-            </div>
-            </div>
-        </section>
-        <section id="about" class="section" aria-labelledby="about-title">
-            <div class="about-container">
-                <h2 class="about-title">About <span>Me</span></h2>
-                <p>
-                    I am a beginner web developer focused on backend development because I find it more satisfying and fulfilling to work behind the scenes. Since I can work where I want to, I can guarantee that I deliver products and services with good quality and results driven by passion.
+      </div>
+    </section>
 
-I’m currently learning <span>Node.js</span> fundamentals and its framework <span>Express.js</span> through project-based learning. I’m also open to opportunities and collaboration. You can view my projects on <a href="https://github.com/J-P-D-20" class="underline" target="_blank" rel="noopener">GitHub</a> feel free to suggest improvements or corrections, as I truly appreciate feedback that helps me become even better.
-                        you can reach me on <a href="#contact" class="underline">dumanonjhomary2@Gmail.com</a>  
-                </p>
-            </div>
-        </section>
-        <section id="projects" class="section" aria-labelledby="projects-title">
-            <div class="projects-container">
-                <h2 id="project-title">Projects</h2>
-                <div class="cards">
-                    <article class="card">
-                        <img src="images/hebrew.png" alt="Project A">
-                        <div class="card-body">
-                            <h3>HE BREW</h3>
-                            <p>An online coffee shop application built with Node.js and Express.js in the backend and html/css and JS for the frontend that enables customers to browse the menu, customize their drinks, and place orders conveniently.</p>
-                            <span><a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a></span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="images/route-planning-green.webp" alt="Project B">
-                        <div class="card-body">
-                            <h3>ROAD MAP</h3>
-                            <p>A web application designed to map and display jeepney routes in Butuan City, providing commuters with a convenient guide for navigating public transportation.</p>
-                             <span><a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a></span>
-                        </div>
-                    </article>
-                     <article class="card">
-                        <img src="images/SmartCheck.png" alt="Project C">
-                        <div class="card-body">
-                            <h3>SmartCheck</h3>
-                            <p>A web-based clinic appointment booking system that enables patients to conveniently schedule appointments online and helps clinics improve efficiency by reducing manual processes.</p>
-                             <span><a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a></span>   
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="section" aria-labelledby="skills-title">
-            <div class="skills-container">
-                <h2 class="skills-title">Skills</h2>
-                    <table class="chips">
-                        <tbody>
-                            <tr>
-                                <td>HTML 5</td>
-                                <td>CSS 3</td>
-                                <td>Javascript</td>
-                                <td>Java</td>
-                                <td>Git & Github</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/HTML.png" alt="HTML image"></td>
-                                <td><img src="images/CSS.png" alt="CSS image"></td>
-                                <td><img src="images/Javascript.png" alt="Javascript image"></td>
-                                <td><img src="images/Java.png" alt="Java image"></td>
-                                <td><img src="images/git and github.png" alt="git & github image"></td>
-                            </tr>
-                            <tr>
-                                <td>Node js</td>
-                                <td>Express js</td>
-                                <td>Thunder Client</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/nodejs.png" alt="nodejs image"></td>
-                                <td><img src="images/express-js.png" alt="express image"></td>
-                                <td><img src="images/thunderclient.Default" alt="thunderclient image"></td>
-                                <td><img src="images/C_Logo.png" alt="C image"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </div>
-        </section>
-        <section id="contact" class="section" aria-labelledby="contact-title">
-            <div class="contact-container">
-                <h2 id="contact-title">Contact <br><span>Me</span></h2>
-                <address>
-                  <i class="fa-solid fa-envelope"></i>: <a href="mailto:dumanonjhomary2">dumanonjhomary2@Gmail.com</a><br>
-                  <i class="fa-brands fa-facebook"></i>: <a href="https://web.facebook.com/jhomary.dumanon.1" target="_blank" rel="noopener noreferrer">Jhomary Dumanon</a><br>
-                  <i class="fa-brands fa-linkedin"></i>: <a href="https://www.linkedin.com/in/jhomary-dumanon-0103322b3/" target="_blank" rel="noopener noreferrer">Jhomary Dumanon</a>
-                </address>
-            </div>
-        </section>
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="about-container">
+        <h2 class="about-title">About <span>Me</span></h2>
+        <p>
+          I am a beginner web developer focused on backend development because I find it more satisfying and fulfilling to work behind the scenes. Since I can work where I want to, I can guarantee that I deliver products and services with good quality and results driven by passion.
+        </p>
+        <p>
+          I’m currently learning <span>Node.js</span> fundamentals and its framework <span>Express.js</span> through project-based learning. I’m also open to opportunities and collaboration. You can view my projects on <a href="https://github.com/J-P-D-20" class="underline" target="_blank" rel="noopener">GitHub</a>. Feel free to suggest improvements or corrections, as I truly appreciate feedback that helps me become even better. You can reach me on <a href="#contact" class="underline">dumanonjhomary2@gmail.com</a>.
+        </p>
+      </div>
+    </section>
 
-    </main>
-   <footer class="site-footer">
-  <p>&copy; Jhomary P. Dumanon. All rights reserved.</p>
-</footer>
+    <!-- Projects -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="projects-container">
+        <h2 id="projects-title">Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="images/hebrew.png" alt="Project A">
+            <div class="card-body">
+              <h3>HE BREW</h3>
+              <p>An online coffee shop application built with Node.js and Express.js in the backend and HTML/CSS/JS for the frontend that enables customers to browse the menu, customize their drinks, and place orders conveniently.</p>
+              <span><a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a></span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/route-planning-green.webp" alt="Project B">
+            <div class="card-body">
+              <h3>ROAD MAP</h3>
+              <p>A web application designed to map and display jeepney routes in Butuan City, providing commuters with a convenient guide for navigating public transportation.</p>
+              <span><a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a></span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/SmartCheck.png" alt="Project C">
+            <div class="card-body">
+              <h3>SmartCheck</h3>
+              <p>A web-based clinic appointment booking system that enables patients to conveniently schedule appointments online and helps clinics improve efficiency by reducing manual processes.</p>
+              <span><a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a></span>   
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="skills-container">
+        <h2 class="skills-title">Skills</h2>
+        <div class="table-container">
+          <table class="chips">
+            <tbody>
+              <tr>
+                <td>HTML 5</td>
+                <td>CSS 3</td>
+                <td>Javascript</td>
+                <td>Java</td>
+                <td>Git & Github</td>
+              </tr>
+              <tr>
+                <td><img src="images/HTML.png" alt="HTML image"></td>
+                <td><img src="images/CSS.png" alt="CSS image"></td>
+                <td><img src="images/Javascript.png" alt="Javascript image"></td>
+                <td><img src="images/Java.png" alt="Java image"></td>
+                <td><img src="images/git and github.png" alt="git & github image"></td>
+              </tr>
+              <tr>
+                <td>Node js</td>
+                <td>Express js</td>
+                <td>Thunder Client</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><img src="images/nodejs.png" alt="nodejs image"></td>
+                <td><img src="images/express-js.png" alt="express image"></td>
+                <td><img src="images/thunderclient.Default" alt="thunderclient image"></td>
+                <td><img src="images/C_Logo.png" alt="C image"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="contact-container">
+        <h2 id="contact-title">Contact <br><span>Me</span></h2>
+        <address>
+          <i class="fa-solid fa-envelope"></i>: <a href="mailto:dumanonjhomary2@gmail.com">dumanonjhomary2@gmail.com</a><br>
+          <i class="fa-brands fa-facebook"></i>: <a href="https://web.facebook.com/jhomary.dumanon.1" target="_blank" rel="noopener noreferrer">Jhomary Dumanon</a><br>
+          <i class="fa-brands fa-linkedin"></i>: <a href="https://www.linkedin.com/in/jhomary-dumanon-0103322b3/" target="_blank" rel="noopener noreferrer">Jhomary Dumanon</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; Jhomary P. Dumanon. All rights reserved.</p>
+  </footer>
 </body>
 </html>
