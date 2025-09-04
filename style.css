@@ -196,8 +196,7 @@ p {
 }
 
 .chips {
-  background-color: aqua;
-  width: 70%;
+  width: 90%;
   border-collapse: collapse;
   text-align: center;
 }
