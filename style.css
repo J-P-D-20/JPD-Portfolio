@@ -228,48 +228,20 @@ p {
   justify-content: center;
 }
 
-.table-container {
-  width: 100%;
-  overflow-x: auto; /* allows scrolling if table is wider */
-  margin: 1rem 0;
-  border-radius: 0.5rem;
+.chips {
+  width: 50%;
+  border-collapse: collapse;
+  text-align: center;
+  min-width:30rem; 
 }
 
 .chips td {
-  padding: 0.6rem; /* smaller padding for mobile */
-  font-size: 1rem;
-  word-break: break-word; /* prevents overflow text */
+  font-size: 1.2rem;
 }
-
 
 .chips img {
   max-width: 4rem;   
   height: auto;
-}
-
-@media (max-width: 768px) {
-  .chips {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .chips {
-    display: block; /* stack rows */
-    width: 100%;
-  }
-
-  .chips tr {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .chips td {
-    flex: 1 1 45%; /* two per row on small screens */
-    max-width: 50%;
-    box-sizing: border-box;
-  }
 }
 
 .table-container {
