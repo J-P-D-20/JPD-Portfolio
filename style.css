@@ -202,13 +202,13 @@ p {
 }
 
 .chips td {
-  padding: 1rem;
+ 
   font-size: 1.2rem;
   word-break: break-word; /* Prevent overflow */
 }
 
 .chips img {
-  max-width: 4rem;   
+  max-width: 3rem;   
   height: auto;
 }
 
