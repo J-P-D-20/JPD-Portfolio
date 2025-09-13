@@ -151,13 +151,17 @@ main {
   width: 50px;
   padding: 0;
   border-radius:90%;
-  background-color: aqua;
+  background-color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
   top: 20px;
   right: 20px;
   position: block;
+}
+
+#switch svg{
+  fill: var(--secondary);
 }
 
 
