@@ -1,4 +1,23 @@
 
+
+
+:root{
+  --primary: black;
+  --secondary: white;
+  --border: black;         
+  --shadow: rgba(0,0,0,0.3);
+  --shadow-hover: rgba(0,0,0,0.5);
+  --text: black;
+}
+
+#darkmode{
+  --primary: white;
+  --secondary: black;
+  --border: white;        
+  --shadow: rgba(255,255,255,0.3);
+  --shadow-hover: rgba(255,255,255,0.5);
+  --text: white;
+}
 html {
   font-size: 100%;
   scroll-behavior: smooth;
@@ -12,9 +31,13 @@ html {
   list-style: none;
 }
 
+
+
 body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  background-color: var(--secondary);
+  color: var(--text);
 }
 
 a {
@@ -27,8 +50,8 @@ button {
 }
 
 .highlight {
-  background-color: black;
-  color: white
+  background-color: var(--primary);
+  color: var(--secondary)
 }
 
 .underline {
@@ -38,9 +61,21 @@ button {
 
 .section {
   padding: 9rem;
-  border: black solid 0.3rem;
+  border: var(--border) solid 0.3rem;
 }
 
+.section-button{
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 5px;
+  transform: scale(1);
+  transition: transform 150ms ease;
+  cursor: pointer;
+}
+
+.section-button:active{
+  transform:scale(.95);
+}
 
 .site-header {
   position: fixed;
@@ -48,7 +83,7 @@ button {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: white;
+  background-color: var(--secondary);
 }
 
 main {
@@ -62,6 +97,10 @@ main {
   height: 5rem;
   padding: 0 1rem;
   width: 100%;
+}
+
+.header-container{
+  flex: 1;
 }
 
 
@@ -79,42 +118,69 @@ main {
 }
 
 .hamburger span {
-  display: block;
-   height: 1px; 
-  background: black;
+  position: block;
+  height: 1px; 
+  background: var(--primary);
   margin: 1px 0;
   width: 25px;
 }
 
 
-.header-container nav {
-  flex: 1;
-}
 
 .header-container ul {
   display: flex;
   gap: 1.25rem;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .nav li {
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:background-color 0.3s ease, transform 0.2s ease;
 }
 
 .nav li:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
+.nav li:active{
+  transform: scale(.90);
+}
+
+#switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius:90%;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
+  position: block;
+}
+
+
+#switch svg:last-child{
+  display: none ;
+}
+
+#darkmode #switch svg:first-child{
+  display: none;
+}
+
+#darkmode #switch svg:last-child{
+  display: block;
+}
 
 .hero {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: var(--primary)
 }
 
 .hero-grid {
-  background-color: white;
+  background-color: var(--secondary);
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -127,7 +193,7 @@ main {
 }
 
 .profile {
-  background-color: black;
+  background-color: var(--primary);
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 150px;
@@ -160,7 +226,7 @@ p {
 
 
 #projects {
-  border: black solid 0.3rem;
+  border: var(--border) solid 0.3rem;
 }
 
 .projects-container h2{
@@ -179,7 +245,7 @@ p {
 .cards .card {
   min-height: 23.75rem;
   width: 19rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.3);
+  box-shadow: 0 0.25rem 0.5rem var(--shadow);
   border-radius: 0.6rem;
   overflow: hidden;
   display: flex;
@@ -190,13 +256,13 @@ p {
 .card-body {
   padding: 1rem;
   flex: 1;
-  background: white;
+  background: var(--secondary);
   text-align: center;
 }
 
 .card:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.5);
+  box-shadow: 0 0.25rem 1rem var(--shadow-hover);
 }
 
 .card img {
@@ -246,7 +312,7 @@ p {
 .contact-container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-right: 3px black solid;
+  border-right: 3px var(--border) solid;
 }
 
 footer {
@@ -278,12 +344,13 @@ footer {
     top: 5rem;
     left: 0;
     width: 100%;
-    background: white;
+    background: var(--secondary);
     display: none;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--secondary);
     padding: 1rem 0;
+    color: var(--primary);
   }
 
   
